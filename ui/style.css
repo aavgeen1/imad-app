@@ -1,7 +1,8 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+    background-color: burlywood;
+    color: brown;
+    margin-top: 60px;
 }
 
 .center {
@@ -18,5 +19,22 @@ body {
 
 .img-medium {
     height: 200px;
+}
+h2{
+    margin:10px auto;
+    max-width: 900px;
+    font-size:xx-large;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+    
+}
+.container {
+    font-family: serif;
+    font-size: 20px;
+    max-width: 900px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
 }
 
