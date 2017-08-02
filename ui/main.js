@@ -20,12 +20,14 @@ function moveLeft(){
 
 img.onclick = function() {
     if(isLeft){
+        if(interval)
         interval2.stop();
         interval = setInterval(moveRight,10);
         console.log(interval);
         isLeft=false;
     }
     if(!isLeft){
+        if(interval2)
         interval.stop();
         interval2 = setInterval(moveLeft,10);
         console.log(interval2);
