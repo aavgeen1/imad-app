@@ -26,7 +26,7 @@ img.onclick = function() {
         console.log("Going Right",interval);
         isLeft=false;
     }
-    else(!isLeft){
+    else{
         if(interval)
         clearInterval(interval);
         interval2 = setInterval(moveLeft,10);
