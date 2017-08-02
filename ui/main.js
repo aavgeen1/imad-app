@@ -8,6 +8,7 @@ var img= document.getElementById("madi");
 var marginLeft=0;
 var marginRight=0;
 var isLeft=false;
+var interval,interval2;
 function moveRight(){
     marginLeft+=1;
     img.style.marginLeft= marginLeft+"px";
@@ -19,12 +20,14 @@ function moveLeft(){
 
 img.onclick = function() {
     if(isLeft){
-        var interval = setInterval(moveRight,10);
+        interval2.stop();
+        interval = setInterval(moveRight,10);
         console.log(interval);
         isLeft=false;
     }
     if(!isLeft){
-        var interval2 = setInterval(moveLeft,10);
+        interval.stop();
+        interval2 = setInterval(moveLeft,10);
         console.log(interval2);
         isLeft=true;
     }
