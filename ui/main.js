@@ -23,14 +23,14 @@ img.onclick = function() {
         if(interval2)
         clearInterval(interval2);
         interval = setInterval(moveRight,10);
-        console.log(interval);
+        console.log("Going Right",interval);
         isLeft=false;
     }
     if(!isLeft){
         if(interval)
         clearInterval(interval);
         interval2 = setInterval(moveLeft,10);
-        console.log(interval2);
+        console.log("Going Left",interval2);
         isLeft=true;
     }
 };
