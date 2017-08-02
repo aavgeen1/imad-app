@@ -25,7 +25,7 @@ img.onclick = function() {
     }
     if(!isLeft){
         var interval2 = setInterval(moveLeft,10);
-        console.log(interva2l);
+        console.log(interval2);
         isLeft=true;
     }
 };
