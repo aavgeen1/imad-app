@@ -77,11 +77,11 @@ submit.onclick = function(){
             }
         }
     }
-    //http://aavgeensingh1.imad.hasura-app.io
+    //http://localhost:80
     //Make a request
     var nameInput= document.getElementById("name");
 var name=nameInput.value;
-    namerequest.open('GET', "http://localhost:80/ui/submit-name?name="+name,true);
+    namerequest.open('GET', "http://aavgeensingh1.imad.hasura-app.io/ui/submit-name?name="+name,true);
     namerequest.send(null);
     
 }
