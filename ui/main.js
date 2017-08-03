@@ -52,7 +52,7 @@ btn.onclick = function(){
     }
     //http://aavgeensingh1.imad.hasura-app.io
     //Make a request
-    request.open('GET', "http://localhost:80/ui/counter", true);
+    request.open('GET', "http://aavgeensingh1.imad.hasura-app.io/ui/counter", true);
     request.send(null);
 }
 
@@ -94,6 +94,6 @@ var name=nameInput.value;
 
 
 
-
+ 
 
 
