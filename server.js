@@ -25,6 +25,18 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
+var counter=0;
+app.get('/ui/counter', function(req,res){
+    counter=counter+1;
+    res.send(counter.toString());
+});
+var names=[];
+app.get('/ui/submit-name', function(req,res){
+    //here url will be /submit-name?name=Aavgeen
+   var name=req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
+});
 var pages={
     'page1':{
         title: "Page One",
